@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coming Soom Fullscream Background Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Theme Html5 coming soom based in material desing and boostrap" />
+    <meta name="keywords" content="coming soom, themes, html5" />
+    <meta name="author" content="Theme developed by Julls Theme" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Change your Google Font Here-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.min.css" media="screen" title="style" charset="utf-8">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" >
+
+
+  </head>
+  <body>
+    <!-- BACKGROUND -->
+    <div class="home__overlay_pattern"></div>
+
+    <!-- PRELOADER -->
+      <div id="prelaoder">
+        <div class="spinner"><div class="spinner-inner"></div></div>
+      </div>
+    <!-- /PRELOADER -->
+
+    <main>
+      <div class="container home">
+        <div class="logo"><img  src="img/logo_omp.png" alt="OMP THEMES" width="240px"></div>
+        <h1>we are coming very soon.</h2>
+
+          <div id="clock" class="row countdow_row"></div>
+            <!-- <div id="" class="row countdow_row">
+              <div class="col l3 m3 s6"><span>128</span> <h1>days</h1></div>
+              <div class="col l3 m3 s6"><span>128</span> <h1>days</h1></div>
+              <div class="col l3 m3 s6"><span>128</span> <h1>days</h1></div>
+              <div class="col l3 m3 s6"><span>128</span> <h1>days</h1></div>
+
+            </div> -->
+
+
+          <!--BTN CONTACT MODAL FORM -->
+          <div class="container__contact">
+              <button class="btn btn-large btn-contact modal-trigger" href="#modal1">Contact</button>
+          </div>
+
+          <!--MODAL CONTACT FORM -->
+          <!-- Modal Structure -->
+          <!-- Modal Trigger -->
+
+
+       <!-- Modal Structure -->
+       <div id="modal1" class="modal">
+          <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input  id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                    <div class="input-field col s12">
+                      <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                      <label for="disabled">Disabled</label>
+                    </div>
+                  </div> -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class=" btn btn-orange">Send</a>
+          </div>
+        </div>
+         <!-- end MODAL-->
+
+
+      </div>
+
+    </main>
+
+
+
+    <footer class="page-footer">
+      <div class="row">
+        <span class="col s12 l6 footer__copyright"> @2015 Theme developed by Julls Theme </span>
+        <span class="col s12 l6 footer__icons">
+          <a href="#"><i class="fa fa-facebook-official fa-2x"></i> </a>
+          <a href="#"><i class="fa fa-twitter-square fa-2x"></i> </a>
+          <a href="#"><i class="fa fa-rss-square fa-2x"></i> </a>
+          <a href="#"><i class="fa fa-pinterest-square fa-2x"></i>
+          <a href="#"><i class="fa fa-instagram fa-2x"></i> </a>
+          <a href="#"><i class="fa fa-google-plus-square fa-2x"></i> </a>
+          <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </span>
+      </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- backstretch  fullscream -->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <!-- countdown -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+
+    <script>
+    // 1. PRELOADER
+      $(window).load(function() {
+
+          setTimeout(function() {
+          $('.spinner,#prelaoder img').fadeOut("slow");
+
+            setTimeout(function() {
+            $('#prelaoder').fadeOut("slow");
+
+              setTimeout(function() {
+                $('.content-block').addClass('animated fadeInDown').fadeIn("slow");
+                   $('#footer').fadeIn('slow');
+
+              }, 900);
+            }, 1000);
+          }, 1000);
+
+      });
+    </script>
+
+
+  </body>
+</html>
